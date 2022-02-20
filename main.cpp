@@ -54,19 +54,19 @@ int main()
 		stud.openFile("kursiokai1.txt");
 		//stud.print();
 		stud.splitByGalutinis();
-		stud.listsToFiles("saunuoliai", "nesaunuoliai");
+		stud.listsToFiles("kietiakai", "vargsiukai");
 
 		stud.openFile("kursiokai2.txt");
 		stud.splitByGalutinis();
-		stud.listsToFiles("saunuoliai2", "nesaunuoliai2");
+		stud.listsToFiles("kietiakai2", "vargsiukai2");
 
 		stud.openFile("kursiokai3.txt");
 		stud.splitByGalutinis();
-		stud.listsToFiles("saunuoliai3", "nesaunuoliai3");
+		stud.listsToFiles("kietiakai3", "vargsiukai3");
 
 		stud.openFile("kursiokai4.txt");
 		stud.splitByGalutinis();
-		stud.listsToFiles("saunuoliai4", "nesaunuoliai4");
+		stud.listsToFiles("kietiakai4", "vargsiukai4");
 
 
 	}

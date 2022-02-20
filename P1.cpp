@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <iomanip>
 #include <string>
 
@@ -47,26 +47,26 @@ public:
 
 		
 
-		cout << "Keliu studentu duomenis norite ivesti? ";
+		cout << "Ivesti studentu kieki ";
 		cin >> kiekStud;
 
 		for (int q = 0; q < kiekStud; q++)
 		{
-			cout << "---Ivesk duomenis---" << endl;
-			cout << "Vardas: " << endl;
+			cout << "---Duomenu ivedimas---" << endl;
+			cout << "Studento Vardas: " << endl;
 			cin >> vardas;
-			cout << "Pavarde: " << endl;
+			cout << "Studento Pavarde: " << endl;
 			cin >> pavarde;
 			for (int i = 0; i < ndx; i++) {
-				cout << i + 1 << "-jo namu darbo ivertinimas: " << endl;
+				cout << "pazymys uz namu darba nr." << i + 1 << ":" << endl;
 				cin >> n[i];
 			}
 			for (int i = 0; i < ndx; i++) {
 				nd = nd + n[i];
 			}
-			cout << "Egzamino ivertinimas: " << endl;
+			cout << "Pazymys uz egzamina: " << endl;
 			cin >> egz;
-			cout << "--------------------------------------------------" << endl;
+			cout << "-----------------------------------------------" << endl;
 			v[q] = vardas;
 			p[q] = pavarde;
 			ndd[q] = nd;
@@ -75,7 +75,7 @@ public:
 	}
 	void print() {
 		cout << left << setw(12) << "Pavarde" << left << setw(12) << "Vardas" << right << setw(10) << "Galutinis (Vid.)" << endl;
-		cout << "--------------------------------------------------" << endl;
+		cout << "---------------------------------------------" << endl;
 		for (int q = 0; q < kiekStud; q++)
 		{
 			vidurkis();

@@ -31,7 +31,7 @@ public:
         return dist(mt);
     }
     string randomSurame() {
-        string surnames[10] = { "Kazlauskas", "Jankauskas", "Petrauskas", "Vasiliauskas", "Butkus", "Urbonas", "Kavaliauskas", "Pranevicius", "Navickas", "Ramanauskas" };
+        string surnames[10] = { "Vaidauskas", "Anukinskas", "Tarankinas", "Tulzys", "Turkus", "Zaalaukinas", "Dartovskis", "Faustauskas", "Getinkas", "Satauskas" };
         return surnames[randomasInt(0, 9)];
     }
     void generateFiles(int kiek, int x, string pav) {
@@ -48,7 +48,7 @@ public:
             NewFile << "-------------------------------------------------------" << endl;
             for (int i = 0; i < x; i++)
             {
-                NewFile << left << setw(18) << randomSurame() << i + 1 << left << setw(14) << "Vardenis" << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << endl;
+                NewFile << left << setw(18) << randomSurame() << i + 1 << left << setw(14) << "Vardas" << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << left << setw(4) << randomasInt(1, 10) << endl;
             }
             NewFile.close();
             x *= 10;

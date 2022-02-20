@@ -46,29 +46,29 @@ public:
 	}
 	~FinalGrade3() {}
 	void ivesk() {
-		cout << "Keliu studentu duomenis norite ivesti? ";
+		cout << "Ivesti studentu kieki ";
 		cin >> kiekStud;
 		for (int q = 0; q < kiekStud; q++)
 		{
 			cout << "---Ivesk duomenis---" << endl;
-			cout << "Vardas: " << endl;
+			cout << "Studento Vardas: " << endl;
 			cin >> vardas;
-			cout << "Pavarde: " << endl;
+			cout << "Studento Pavarde: " << endl;
 			cin >> pavarde;
-			cout << "Kiek namu darbu norite ivesti? ";
+			cout << "Namu darbu kiekis ";
 			cin >> ndx;
-			cout << "--Namu darbu atsitiktiniai balai--" << endl;
+			cout << "--Namu darbu pazymiai sugeneruoti--" << endl;
 			for (int i = 0; i < ndx; i++) {
 				n.push_back(i);
 				double x = randomas(1, 10);
-				cout << i + 1 << "-ojo namu darbo ivertinimas: " << setprecision(2) << fixed << x << endl;
+				cout << "pazymys uz namu darba nr." << i + 1 << ":"<< setprecision(2) << fixed << x << endl;
 				n.insert(n.begin()+i, x);
 			}
 			for (int i = 0; i < ndx; i++) {
 				nd = nd + n[i];
 			}
 			egz = randomas(1, 10);
-			cout << "Egzamino ivertinimas: " << setprecision(2) << fixed << egz <<endl;
+			cout << "Pazymys uz egzamina: " << setprecision(2) << fixed << egz <<endl;
 			cout << "--------------------------------------------------" << endl;
 			v[q] = vardas;
 			p[q] = pavarde;
@@ -77,10 +77,10 @@ public:
 		}
 	}
 	void print() {
-		cout << "Ka norite taikyti: vidurki ar mediana?" << endl << "Vidurkis = 1; Mediana = 2: ";
+		cout << " vidurkis ar mediana?" << endl << "vidurkis = 1; mediana = 2: ";
 		cin >> vARm;
 		while (vARm != 1 && vARm != 2) {
-				cout << "Tokio pasirinkimo nera! Bandyk dar karta." << endl;
+				cout << "Klaida! Pasirinkti is naujo." << endl;
 				cin >> vARm;
 		}
 		
