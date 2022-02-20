@@ -10,7 +10,7 @@ using namespace std;
 using hrClock = chrono::high_resolution_clock;
  //kiek studentu saugoti
 
-class GalutinisBalas3 {
+class FinalGrade3 {
 private:
 	string vardas = "", pavarde = "";
 	double nd = 0, egz = 0, galutinis = 0;
@@ -22,14 +22,14 @@ private:
 	int kiekStud = 0, vARm=0, ndx = 1;
 
 public:
-	GalutinisBalas3() {}
-	GalutinisBalas3(string v, string p, double n, double e) {
+	FinalGrade3() {}
+	FinalGrade3(string v, string p, double n, double e) {
 		vardas = v;
 		pavarde = p;
 		nd = n;
 		egz = e;
 	}
-	GalutinisBalas3& operator= (GalutinisBalas3& obj) {
+	FinalGrade3& operator= (FinalGrade3& obj) {
 		vardas = obj.vardas;
 		pavarde = obj.pavarde;
 		nd = obj.nd;
@@ -37,14 +37,14 @@ public:
 		cout << "---Assignment operator---" << endl;
 		return *this;
 	}
-	GalutinisBalas3(GalutinisBalas3& copy) {
+	FinalGrade3(FinalGrade3& copy) {
 		vardas = copy.vardas;
 		pavarde = copy.pavarde;
 		nd = copy.nd;
 		egz = copy.egz;
 		cout << "---Copy constructor---" << endl;
 	}
-	~GalutinisBalas3() {}
+	~FinalGrade3() {}
 	void ivesk() {
 		cout << "Keliu studentu duomenis norite ivesti? ";
 		cin >> kiekStud;
@@ -104,7 +104,7 @@ public:
 		}
 	}
 	void vidurkis() {
-		//0.4 * vidurkis + 0.6 * egzaminas
+		
 		for (int q = 0; q < kiekStud; q++) {
 			ndd[q] = (ndd[q] / ndx) * 0.4;
 			e[q] = e[q] * 0.6;
@@ -125,7 +125,7 @@ public:
 		return 0;
 	}
 	void mediana() {
-		//0.4 * mediana + 0.6 * egzaminas
+		
 		for (int q = 0; q < kiekStud; q++) {
 			sort(n[0], n[ndx-1]);
 			if (ndx % 2 == 0) {

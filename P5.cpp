@@ -10,7 +10,7 @@
 using namespace std;
 using hrClock = chrono::high_resolution_clock;
  //kiek studentu saugoti
-struct GalutinisBalas5
+struct FinalGrade5
 {
     static const int db = 102;
     vector<string> rez;//galutinis list

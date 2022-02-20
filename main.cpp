@@ -13,28 +13,28 @@ int main()
 	cin >> number;
 
 	if (number == 1) {
-		GalutinisBalas1 stud;
+		FinalGrade1 stud;
 		stud.ivesk();
 		stud.print();
 	
 
 	}
 	else if (number == 2) {
-		GalutinisBalas2 stud;
+		FinalGrade2 stud;
 		stud.ivesk();
 		stud.print();
-	
+	 
 	
 	}
 	else if (number == 3) {
-		GalutinisBalas3 stud;
+		FinalGrade3 stud;
 		stud.ivesk();
 		stud.print();
 
 
 	}
 	else if (number == 4) {
-		GalutinisBalas4 stud;
+		FinalGrade4 stud;
 		stud.generateFile(100, "kursiokai.txt");
 		stud.openFile("kursiokai.txt");
 		try {
@@ -47,9 +47,9 @@ int main()
 
 	}
 	else if (number == 5) {
-		GalutinisBalas5 stud;
+		FinalGrade5 stud;
 		
-		stud.generateFiles(5, 1000, "kursiokai");//kiek failu, kiek studentu, failo pavadinimas. kiekvienas sarasas dideja 10x
+		stud.generateFiles(5, 1000, "kursiokai");
 
 		stud.openFile("kursiokai1.txt");
 		//stud.print();

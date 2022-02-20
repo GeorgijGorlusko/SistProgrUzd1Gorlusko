@@ -12,7 +12,7 @@ using namespace std;
 using hrClock = chrono::high_resolution_clock;
  //kiek studentu saugoti
 
-class GalutinisBalas4 {
+class FinalGrade4 {
 private:
 	string vardas = "", pavarde = "";
 	double nd = 0, egz = 0, galutinis = 0;
@@ -23,14 +23,14 @@ private:
 	double ndd[db], e[db], g[db];
 	int kiekStud = 0, vARm=0, ndx = 5;
 public:
-	GalutinisBalas4() {}
-	GalutinisBalas4(string v, string p, double n, double e) {
+	FinalGrade4() {}
+	FinalGrade4(string v, string p, double n, double e) {
 		vardas = v;
 		pavarde = p;
 		nd = n;
 		egz = e;
 	}
-	GalutinisBalas4& operator= (GalutinisBalas4& obj) {
+	FinalGrade4& operator= (FinalGrade4& obj) {
 		vardas = obj.vardas;
 		pavarde = obj.pavarde;
 		nd = obj.nd;
@@ -38,14 +38,14 @@ public:
 		cout << "---Assignment operator---" << endl;
 		return *this;
 	}
-	GalutinisBalas4(GalutinisBalas4& copy) {
+	FinalGrade4(FinalGrade4& copy) {
 		vardas = copy.vardas;
 		pavarde = copy.pavarde;
 		nd = copy.nd;
 		egz = copy.egz;
 		cout << "---Copy constructor---" << endl;
 	}
-	~GalutinisBalas4() {}
+	~FinalGrade4() {}
 	void ivesk() {
 		cout << "Keliu studentu duomenis norite ivesti? ";
 		cin >> kiekStud;

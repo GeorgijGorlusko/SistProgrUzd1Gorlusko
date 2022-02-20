@@ -2,31 +2,31 @@
 #include <iomanip>
 #include <string>
 #include <vector>
-//#include <algorithm>
+
 
 using namespace std;
- //kiek studentu saugoti
+ 
 
-class GalutinisBalas2 {
+class FinalGrade2 {
 private:
 	string vardas = "", pavarde = "";
 	double nd = 0, egz = 0, galutinis = 0;
 	static const int db = 20;
-	//double* n = new double[ndx];
+	
 	vector<double>n;
 	string v[db], p[db];
 	double ndd[db], e[db], g[db];
 	int kiekStud = 0, vARm=0, ndx = 1;
 
 public:
-	GalutinisBalas2() {}
-	GalutinisBalas2(string v, string p, double n, double e) {
+	FinalGrade2() {}
+	FinalGrade2(string v, string p, double n, double e) {
 		vardas = v;
 		pavarde = p;
 		nd = n;
 		egz = e;
 	}
-	GalutinisBalas2& operator= (GalutinisBalas2& obj) {
+	FinalGrade2& operator= (FinalGrade2& obj) {
 		vardas = obj.vardas;
 		pavarde = obj.pavarde;
 		nd = obj.nd;
@@ -34,22 +34,15 @@ public:
 		cout << "---Assignment operator---" << endl;
 		return *this;
 	}
-	GalutinisBalas2(GalutinisBalas2& copy) {
+	FinalGrade2(FinalGrade2& copy) {
 		vardas = copy.vardas;
 		pavarde = copy.pavarde;
 		nd = copy.nd;
 		egz = copy.egz;
 		cout << "---Copy constructor---" << endl;
 	}
-	~GalutinisBalas2() {}
-	//void setVardas(string v) { vardas=v; }
-	//void setPavarde(string p) { pavarde=p; }
-	//void setNd(double n) { nd=n; }
-	//void setEgz(double e) { egz=e; }
-	//string getVardas() { return vardas; }
-	//string getPavarde() { return pavarde; }
-	//double getNd() { return nd; }
-	//double getEgz() { return egz; }
+	~FinalGrade2() {}
+	
 
 	void ivesk() {
 
@@ -134,7 +127,7 @@ public:
 		return 0;
 	}
 	void mediana() {
-		//0.4 * mediana + 0.6 * egzaminas
+		
 		for (int q = 0; q < kiekStud; q++) {
 			sort(n[0], n[ndx-1]);
 			if (ndx % 2 == 0) {
