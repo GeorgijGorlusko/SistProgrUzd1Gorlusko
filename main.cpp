@@ -1,8 +1,8 @@
-#include "P1.cpp" 
-#include "P2.cpp" 
-#include "P3.cpp" 
-#include "P4.cpp" 
-#include "P5.cpp" 
+#include "Uzd1.cpp" 
+#include "Uzd2.cpp" 
+#include "Uzd3.cpp" 
+#include "Uzd4.cpp" 
+#include "Uzd5.cpp" 
 
 int main()
 {
