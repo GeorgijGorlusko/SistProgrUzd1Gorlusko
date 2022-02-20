@@ -55,7 +55,7 @@ public:
         }
         auto end = hrClock::now();
         auto elapsed = chrono::duration_cast<chrono::nanoseconds>(end - begin);
-        //printf("Result: %.20f\n", sum);
+        
         cout << "Generate files";
         printf(" - Time measured : % .3f seconds.\n", elapsed.count() * 1e-9);
     }
@@ -76,7 +76,7 @@ public:
             students.push_back(student);
             vSize++;
         }
-        //eiluteje 8 stulpeliai
+        
         cout << endl;
         cout << "Students in file: " << vSize/8 << endl;
         kiekStud = vSize / 8;
@@ -87,12 +87,12 @@ public:
  
             rez.push_back(students[q]);
             rez.push_back(students[q+1]);
-            //galutinis
+            
             for (int w = 2; w < ndx+2; w++) {
                 nd= nd + stod(students[q + w]);
             }
-            nd /= ndx;//nd vidurkis
-            //0.4 * vidurkis + 0.6 * egzaminas
+            nd /= ndx;
+            
             nd = (nd * 0.4) + 0.6 * stod(students[q + 7]);
             rez.push_back(to_string(nd));
             nd = 0;
@@ -100,7 +100,7 @@ public:
         }
         auto end = hrClock::now();
         auto elapsed = chrono::duration_cast<chrono::nanoseconds>(end - begin);
-        //printf("Result: %.20f\n", sum);
+        
         cout << "Open file";
         printf(" - Time measured : % .3f seconds.\n", elapsed.count() * 1e-9);
     }
@@ -137,7 +137,7 @@ public:
         }
         auto end = hrClock::now();
         auto elapsed = chrono::duration_cast<chrono::nanoseconds>(end - begin);
-        //printf("Result: %.20f\n", sum);
+        
         cout << "Spilt to two lists";
         printf(" - Time measured : % .3f seconds.\n", elapsed.count() * 1e-9);
     }
@@ -174,7 +174,7 @@ public:
         silver.clear();
         auto end = hrClock::now();
         auto elapsed = chrono::duration_cast<chrono::nanoseconds>(end - begin);
-        //printf("Result: %.20f\n", sum);
+        
         cout << "Save list to file";
         printf(" - Time measured : % .3f seconds.\n", elapsed.count() * 1e-9);
     }

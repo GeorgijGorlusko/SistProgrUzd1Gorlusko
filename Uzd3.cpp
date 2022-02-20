@@ -4,18 +4,18 @@
 #include <vector>
 #include <random>
 #include <chrono>
-//#include <algorithm>
+
 
 using namespace std;
 using hrClock = chrono::high_resolution_clock;
- //kiek studentu saugoti
+ 
 
 class FinalGrade3 {
 private:
 	string vardas = "", pavarde = "";
 	double nd = 0, egz = 0, galutinis = 0;
 	static const int db = 20;
-	//double* n = new double[ndx];
+	
 	vector<double>n;
 	string v[db], p[db];
 	double ndd[db], e[db], g[db];

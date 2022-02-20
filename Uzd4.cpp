@@ -10,7 +10,7 @@
 
 using namespace std;
 using hrClock = chrono::high_resolution_clock;
- //kiek studentu saugoti
+ 
 
 class FinalGrade4 {
 private:
@@ -111,7 +111,7 @@ public:
 	}
 	
 	void vidurkis() {
-		//0.4 * vidurkis + 0.6 * egzaminas
+		
 		int a = 0;
 		for (int q = 0; q < kiekStud; q++) {
 			ndd2.at(q) = (ndd2.at(q) / ndx) * 0.4;
@@ -137,7 +137,7 @@ public:
 		return 0;
 	}
 	void mediana() {
-		//0.4 * mediana + 0.6 * egzaminas
+		
 		int a = 0;
 		for (int q = 0; q < kiekStud; q++) {
 			sort2(n[0], n[ndx-1]);
@@ -194,17 +194,14 @@ public:
 			vSize++;//eiluciu duomenu
 		}
 		vSize/=8; //eiluteje 8 stulpeliai
-		//
-		//for (const auto& i : students) { // atspausdina faila
-		//	cout << i << "; ";
-		//}
+		
 		cout << endl;
 		cout <<"Students in txt file: " << vSize << endl;
 		kiekStud = vSize;
 		n.reserve(ndx*vSize+5);
 		file.close();
 
-		ndx = 5; // txt faile 5 ND
+		ndx = 5; 
 		vSize *= 8;
 		int a = 0;
 		for (int q = 0; q < vSize; q++)
@@ -224,10 +221,6 @@ public:
 			q += 7;
 			a++;
 		}
-		//sort(p2.begin(), p2.end());		
-		//sort(v2.begin(), v2.end());
-		//sort(p2.begin(), p2.end());
-		//sort(ndd2.begin(), ndd2.end());
-		//sort(e2.begin(), e2.end());
+		
 	}
 };
