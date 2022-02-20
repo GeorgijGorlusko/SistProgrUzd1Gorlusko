@@ -9,15 +9,15 @@
 #include <algorithm>
 using namespace std;
 using hrClock = chrono::high_resolution_clock;
- //kiek studentu saugoti
+ 
 struct FinalGrade5
 {
     static const int db = 102;
-    vector<string> rez;//galutinis list
+    vector<string> rez;
     vector<string> gold, silver;
     int kiekStud = 0, ndx = 5;
-    double sum = 0;//for time
-    double add = 1;//for time
+    double sum = 0;
+    double add = 1;
 
 public:
     double randomas(double a, double b) {
@@ -74,7 +74,7 @@ public:
         getline(file, student);//Skipping line
         while (file >> student) {
             students.push_back(student);
-            vSize++;//eiluciu duomenu
+            vSize++;
         }
         //eiluteje 8 stulpeliai
         cout << endl;
